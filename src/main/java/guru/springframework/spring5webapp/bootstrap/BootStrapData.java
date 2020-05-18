@@ -20,7 +20,7 @@ public class BootStrapData implements CommandLineRunner {
     private final BookRepository bookRepository;
     private final PublisherRepository publisherRepository;
 
-    // tells the Spring Framework to inject an instance of AuthorRepository and BookRepository when
+    // tells the Spring Framework to inject an instance of AuthorRepository, BookRepository and PublisherRepository when
     // constructing the bean
     public BootStrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
